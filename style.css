@@ -1,0 +1,80 @@
+/*
+Theme Name: Monk
+Theme URI: https://themesforwp.com
+Author: Jeremy Techtmann
+Author URI: https://removement.com/
+Description: An intentionally simple Site Editor base/starter theme built for WordPress.
+Requires at least: 6.0
+Tested up to: 6.0
+Requires PHP: 5.6
+Version: 0.5.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: monk
+Tags: block-editor, full-site-editing, site-editor
+
+*/
+
+/* ------------------------------
+    RESETS
+------------------------------ */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="submit"],
+textarea:focus,
+.wp-element-button {
+	transition: all 0.15s ease-in-out;
+}
+
+a,
+a:focus,
+a:hover,
+a:not(.wp-element-button) {
+	text-decoration-thickness: 1px;
+}
+
+b,
+strong {
+	font-weight: var(--wp--custom--font-weight--medium);
+}
+
+blockquote {
+	margin: 0;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ol ul,
+ol ol,
+ul ul,
+ul ol {
+    padding-inline-start: 40px;
+}
+
+/* ------------------------------
+    BLOCK STYLES
+------------------------------ */
+
+/* ---------------
+    LISTS
+--------------- */
+.is-style-no-bullets li {
+	list-style-type: none;
+	margin-left: 0;
+}
