@@ -53,7 +53,7 @@
 			]
 		},
 		"layout": {
-			"contentSize": "50rem",
+			"contentSize": "45rem",
 			"wideSize": "70rem"
 		},
 		"spacing": {
@@ -650,9 +650,9 @@
 			"blockGap": "2rem",
 			"padding": {
 				"top": "var(--wp--preset--spacing--medium)",
-				"right": "var(--wp--preset--spacing--small)",
+				"right": "var(--wp--preset--spacing--large)",
 				"bottom": "var(--wp--preset--spacing--medium)",
-				"left": "var(--wp--preset--spacing--small)"
+				"left": "var(--wp--preset--spacing--large)"
 			}
 		},
 		"typography": {
