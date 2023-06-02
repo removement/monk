@@ -542,33 +542,13 @@
 		"elements": {
 			"button": {
 				"border": {
-					"radius": "0",
-					"color": "var(--wp--preset--color--gray)",
-					"width": "1px"
+					"radius": "5px"
 				},
 				"color": {
 					"background": "var(--wp--preset--color--contrast)",
 					"text": "var(--wp--preset--color--base)"
 				},
 				":hover": {
-					"color": {
-						"background": "var(--wp--preset--color--contrast)",
-						"text": "var(--wp--preset--color--base)"
-					}
-				},
-				":focus": {
-					"color": {
-						"background": "var(--wp--preset--color--contrast)",
-						"text": "var(--wp--preset--color--base)"
-					}
-				},
-				":active": {
-					"color": {
-						"background": "var(--wp--preset--color--contrast)",
-						"text": "var(--wp--preset--color--base)"
-					}
-				},
-				":visited": {
 					"color": {
 						"background": "var(--wp--preset--color--contrast)",
 						"text": "var(--wp--preset--color--base)"
