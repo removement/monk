@@ -2,7 +2,7 @@
 /**
 * @package Monk
 * @link    https://removement.com/
-* @since Monk 0.5.0
+* @since Monk 0.6.0
 */
 
 /*
@@ -18,7 +18,7 @@ add_action( 'wp_enqueue_scripts', 'monk_enqueue_styles' );
 
 /**
 * Sets up theme defaults and registers support for various WordPress features.
-* @since Monk 0.5.0
+* @since Monk 0.6.0
 * @return void
 */
 
@@ -45,7 +45,7 @@ add_action( 'after_setup_theme', 'monk_setup' );
 
 /**
  * Register block styles.
- * @since 0.5.0
+ * @since 0.6.0
  */
 function monk_register_block_styles() {
 
