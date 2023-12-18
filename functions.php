@@ -5,15 +5,15 @@
 * @since Monk 0.6.0
 */
 
-/*
-* Enqueue the theme style sheet
-*/
-function monk_enqueue_styles() {
+namespace monk;
 
-	wp_enqueue_style( 'monk', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
-
+/**
+ * Enqueue styles.
+ */
+function enqueue_style_sheet() {
+	wp_enqueue_style( sanitize_title( __NAMESPACE__ ), get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 }
-add_action( 'wp_enqueue_scripts', 'monk_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_style_sheet' );
 
 
 /**
@@ -22,32 +22,30 @@ add_action( 'wp_enqueue_scripts', 'monk_enqueue_styles' );
 * @return void
 */
 
-if ( ! function_exists( 'monk_setup' ) ) {
 
-	function monk_setup() {
+function setup() {
 
-		// Make theme available for translation.
-		load_theme_textdomain( 'monk', get_template_directory() . '/languages' );
+	// Make theme available for translation.
+	load_theme_textdomain( 'monk', get_template_directory() . '/languages' );
 
-		// Enqueue editor styles.
-		add_editor_style( get_template_directory_uri() . '/style.css' );
+	// Enqueue editor styles.
+	add_editor_style( get_template_directory_uri() . '/style.css' );
 
-		// Disable core block inline styles.
-		add_filter( 'should_load_separate_core_block_assets', '__return_false' );
+	// Disable core block inline styles.
+	add_filter( 'should_load_separate_core_block_assets', '__return_false' );
 
-		// Remove core patterns.
-		remove_theme_support( 'core-block-patterns' );
+	// Remove core patterns.
+	remove_theme_support( 'core-block-patterns' );
 
-	}
 }
-add_action( 'after_setup_theme', 'monk_setup' );
+add_action( 'after_setup_theme', __NAMESPACE__ . '\setup' );
 
 
 /**
  * Register block styles.
  * @since 0.6.0
  */
-function monk_register_block_styles() {
+function register_block_styles() {
 
 	$block_styles = array(
 		'core/list'  => array(
@@ -67,4 +65,4 @@ function monk_register_block_styles() {
 		}
 	}
 }
-add_action( 'init', 'monk_register_block_styles' );
+add_action( 'init', __NAMESPACE__ . '\register_block_styles' );
