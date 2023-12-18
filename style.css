@@ -47,7 +47,7 @@ a:not(.wp-element-button) {
 
 b,
 strong {
-	font-weight: var(--wp--custom--font-weight--medium);
+	font-weight: var(--wp--custom--font-weight--bold);
 }
 
 blockquote {
