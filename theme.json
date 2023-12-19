@@ -70,7 +70,7 @@
 					"fluid": false,
 					"size": "0.9rem",
 					"name": "Extra Small",
-					"slug": "x-small"
+					"slug": "1-small"
 				},
 				{
 					"fluid": false,
@@ -307,7 +307,6 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--heading)",
 					"fontSize": "var(--wp--preset--font-size--medium)",
-					"fontStyle": "italic",
 					"lineHeight": "var(--wp--custom--line-height--default)"
 				},
 				"variations": {
@@ -347,7 +346,69 @@
 					"text": "var(--wp--preset--color--contrast)"
 				},
 				"spacing": {
-					"padding": "var(--wp--preset--spacing--medium)"
+					"padding": {
+						"top": "var(--wp--preset--spacing--medium)",
+						"right": "var(--wp--preset--spacing--medium)",
+						"bottom": "var(--wp--preset--spacing--medium)",
+						"left": "var(--wp--preset--spacing--medium)"
+					}
+				}
+			},
+			"core/pullquote": {
+				"elements": {
+					"cite": {
+						"typography": {
+							"fontFamily": "var(--wp--preset--font-family--body)",
+							"fontSize": "var(--wp--preset--font-size--default)",
+							"fontStyle": "normal"
+						}
+					}
+				},
+				"spacing": {
+					"padding": {
+						"bottom": "0",
+						"top": "0"
+					}
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--heading)",
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"lineHeight": "var(--wp--custom--line-height--default)"
+				}
+			},
+			"core/image": {
+				"elements": {
+					"caption": {
+						"typography": {
+							"fontSize": "var(--wp--preset--font-size--1-small)"
+						},
+						"spacing": {
+							"margin": {
+								"top": "calc(var(--wp--preset--spacing--small) - 0.5rem)"
+							}
+						}
+					}
+				},
+				"variations": {
+					"rounded": {
+						"border": {
+							"radius": "var(--wp--custom--border-radius--medium)"
+						}
+					}
+				}
+			},
+			"core/gallery": {
+				"elements": {
+					"caption": {
+						"typography": {
+							"fontSize": "var(--wp--preset--font-size--1-small)"
+						},
+						"spacing": {
+							"margin": {
+								"top": "calc(var(--wp--preset--spacing--small) - 2rem)"
+							}
+						}
+					}
 				}
 			}
 		}	

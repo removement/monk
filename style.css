@@ -163,6 +163,14 @@ ol.is-style-no-bullets li:not(:first-child) {
 	color: var(--wp--preset--color--base);
 }
 
+/* ----------------------------------
+    TABLES
+---------------------------------- */
+.wp-block-table figcaption {
+	padding-top: calc(var(--wp--preset--spacing--small) - 0.5rem);
+	font-size: var(--wp--preset--font-size--1-small);
+}
+
 /* --------------------------------------------------------
     ACCESSABILITY
 -------------------------------------------------------- */
