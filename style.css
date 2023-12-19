@@ -62,6 +62,15 @@ ul ol {
     padding-inline-start: var(--wp--preset--spacing--small);
 }
 
+a:not(.wp-element-button) {
+	color: var(--wp--custom--color--link);
+}
+
+a:not(.wp-element-button):focus,
+a:not(.wp-element-button):hover {
+	color: var(--wp--custom--color--link-hover);
+}
+
 /* --------------------------------------------------------
     Default Spacing for items with backgrounds
 -------------------------------------------------------- */
