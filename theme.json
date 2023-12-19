@@ -154,11 +154,6 @@
 			},
 			"spacingSizes": [
 				{
-					"size": "0.5rem",
-					"name": "X Small",
-					"slug": "1-small"
-				},
-				{
 					"size": "1rem",
 					"name": "Small",
 					"slug": "small"
@@ -198,6 +193,18 @@
 		},
 		"useRootPaddingAwareAlignments": true,
 		"custom": {
+			"color": {
+				"link": "var(--wp--preset--color--primary)",
+				"linkHover": "var(--wp--preset--color--contrast)",
+				"defaultButtonHoverBackground": "var(--wp--preset--color--primary)",
+				"outlineButtonHoverBackground": "var(--wp--preset--color--primary)"
+			},
+			"borderRadius": {
+				"small": "calc(var(--wp--preset--spacing--small) - 0.7rem)",
+				"medium": "calc(var(--wp--preset--spacing--small) - 0.5rem)",
+				"large": "calc(var(--wp--preset--spacing--small) + 0.5rem)",
+				"circle": "50rem"
+			},
 			"fontWeight": {
 				"thin": 100,
 				"extra-light": 200,
@@ -239,7 +246,15 @@
 			"lineHeight": "1.55"
 		},
 		"blocks": {
+			"core/buttons": {
+				"spacing": {
+					"blockGap": "var(--wp--preset--spacing--small)"
+				}
+			},
 			"core/button": {
+				"border": {
+					"radius": "var(--wp--custom--border-radius--small)"
+				},
 				"spacing": {
 					"padding": {
 						"top": "var(--wp--preset--spacing--small)",
@@ -264,14 +279,10 @@
 					}
 				}
 			},
-			"core/buttons": {
-				"spacing": {
-					"blockGap": "var(--wp--preset--spacing--small)"
-				}
-			},
 			"core/quote": {
 				"border": {
-					"radius": "var(--wp--preset--spacing--1-small)"
+					"radius": "var(--wp--custom--border-radius--small)",
+					"width": "0"
 				},
 				"color": {
 					"background": "var(--wp--preset--color--gray-1)"
@@ -326,25 +337,6 @@
 					}
 				}
 			}
-		},
-		"elements": {
-			"button": {
-				"border": {
-					"radius": "5px",
-					"width": "0"
-				},
-				"color": {
-					"background": "var(--wp--preset--color--contrast)",
-					"text": "var(--wp--preset--color--base)"
-				},
-				":hover": {
-					"color": {
-						"background": "var(--wp--preset--color--primary)",
-						"text": "var(--wp--preset--color--base)"
-					}
-				}
-			}
-		}
-	
+		}	
 	}
 }
