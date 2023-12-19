@@ -47,30 +47,26 @@ add_action( 'after_setup_theme', __NAMESPACE__ . '\setup' );
  */
 if ( ! function_exists( 'block_styles' ) ) :
 	function block_styles() {
-
-		register_block_style(
-			'core/list',
-			array(
-				'name'         => 'no-bullets',
-				'label'        => __( 'No Bullets', __NAMESPACE__ ),
-				/*
-				 * Styles for the custom checkmark list block style
-				 * https://github.com/WordPress/gutenberg/issues/51480
-				 */
-				'inline_style' => '
-				ul.is-style-no-bullets,
-				ol.is-style-no-bullets {
-					padding-left: 0;
-				}
-				
-				ul.is-style-no-bullets li:not(:first-child),
-				ol.is-style-no-bullets li:not(:first-child) {
-					margin-top: var(--wp--preset--spacing--1-small)
-				}',
-
-			)
+		$block_styles = array(
+			'core/list' => array(
+				'no-bullets' => __( 'No Bullets', __NAMESPACE__ )
+			),
+			'core/code' => array(
+				'dark-code' => __( 'Dark', __NAMESPACE__ ),
+			),
 		);
-		
+
+		foreach ( $block_styles as $block => $styles ) {
+			foreach ( $styles as $style_name => $style_label ) {
+				register_block_style(
+					$block,
+					array(
+						'name'  => $style_name,
+						'label' => $style_label,
+					)
+				);
+			}
+		}
 	}
 endif;
 add_action( 'init', __NAMESPACE__ . '\block_styles' );

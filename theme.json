@@ -336,6 +336,19 @@
 						}
 					}
 				}
+			},
+			"core/code": {
+				"border": {
+					"radius": "var(--wp--custom--border-radius--small)",
+					"width": "0"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--gray-1)",
+					"text": "var(--wp--preset--color--contrast)"
+				},
+				"spacing": {
+					"padding": "var(--wp--preset--spacing--medium)"
+				}
 			}
 		}	
 	}

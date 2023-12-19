@@ -116,6 +116,27 @@ a:not(.wp-element-button):hover {
 	margin-left: 0;
 }
 
+/* ----------------------------------
+    LISTS - NO BULLETS
+---------------------------------- */
+ul.is-style-no-bullets,
+ol.is-style-no-bullets {
+	padding-left: 0;
+}
+
+ul.is-style-no-bullets li:not(:first-child),
+ol.is-style-no-bullets li:not(:first-child) {
+	margin-top: calc(var(--wp--preset--spacing--small) - 0.5rem);
+}
+
+/* ----------------------------------
+    CODE - DARK
+---------------------------------- */
+.wp-block-code.is-style-dark {
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+}
+
 /* --------------------------------------------------------
     ACCESSABILITY
 -------------------------------------------------------- */
