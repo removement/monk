@@ -21,6 +21,11 @@
 					"color": "#111111",
 					"name": "Contrast",
 					"slug": "contrast"
+				},
+				{
+					"color": "#E65E17",
+					"name": "Primary",
+					"slug": "primary"
 				}
 			]
 		},
@@ -133,6 +138,11 @@
 				"steps": 0
 			},
 			"spacingSizes": [
+				{
+					"size": "0.5rem",
+					"name": "X Small",
+					"slug": "1-small"
+				},
 				{
 					"size": "1rem",
 					"name": "Small",
@@ -257,8 +267,8 @@
 				},
 				":hover": {
 					"color": {
-						"background": "var(--wp--preset--color--base)",
-						"text": "var(--wp--preset--color--contrast)"
+						"background": "var(--wp--preset--color--primary)",
+						"text": "var(--wp--preset--color--base)"
 					}
 				}
 			}
