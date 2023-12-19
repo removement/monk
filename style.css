@@ -138,6 +138,13 @@ ol.is-style-no-bullets li:not(:first-child) {
 }
 
 /* ----------------------------------
+    DETAILS
+---------------------------------- */
+.wp-block-details summary {
+	font-weight: var(--wp--custom--font-weight--semi-bold);
+}
+
+/* ----------------------------------
     DETAILS - GRAY
 ---------------------------------- */
 .wp-block-details.is-style-gray {
