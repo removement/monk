@@ -52,7 +52,11 @@ if ( ! function_exists( 'block_styles' ) ) :
 				'no-bullets' => __( 'No Bullets', __NAMESPACE__ )
 			),
 			'core/code' => array(
-				'dark-code' => __( 'Dark', __NAMESPACE__ ),
+				'dark' => __( 'Dark', __NAMESPACE__ )
+			),
+			'core/details' => array(
+				'gray' => __( 'Gray', __NAMESPACE__ ),
+				'dark' => __( 'Dark', __NAMESPACE__ )
 			),
 		);
 
