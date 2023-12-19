@@ -50,10 +50,6 @@ strong {
 	font-weight: var(--wp--custom--font-weight--bold);
 }
 
-blockquote {
-	margin: 0;
-}
-
 ol,
 ul {
 	padding-left: var(--wp--preset--spacing--small)

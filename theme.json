@@ -26,6 +26,21 @@
 					"color": "#E65E17",
 					"name": "Primary",
 					"slug": "primary"
+				},
+				{
+					"color": "#F1F1F1",
+					"name": "Gray 1",
+					"slug": "gray-1"
+				},
+				{
+					"color": "#E65E17",
+					"name": "Gray 2",
+					"slug": "gray-2"
+				},
+				{
+					"color": "#E65E17",
+					"name": "Gray 3",
+					"slug": "gray-3"
 				}
 			]
 		},
@@ -252,6 +267,63 @@
 			"core/buttons": {
 				"spacing": {
 					"blockGap": "var(--wp--preset--spacing--small)"
+				}
+			},
+			"core/quote": {
+				"border": {
+					"radius": "var(--wp--preset--spacing--1-small)"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--gray-1)"
+				},
+				"elements": {
+					"cite": {
+						"typography": {
+							"fontFamily": "var(--wp--preset--font-family--body)",
+							"fontSize": "var(--wp--preset--font-size--small)",
+							"fontStyle": "normal"
+						}
+					}
+				},
+				"spacing": {
+					"padding": {
+						"bottom": "var(--wp--preset--spacing--large)",
+						"left": "var(--wp--preset--spacing--large)",
+						"right": "var(--wp--preset--spacing--large)",
+						"top": "var(--wp--preset--spacing--large)"
+					}
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--heading)",
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontStyle": "italic",
+					"lineHeight": "var(--wp--custom--line-height--default)"
+				},
+				"variations": {
+					"plain": {
+						"border": {
+							"color": "var(--wp--preset--color--gray-1)",
+							"radius": "0",
+							"style": "solid",
+							"width": "0 0 0 3px"
+						},
+						"color": {
+							"background": "transparent"
+						},
+						"spacing": {
+							"padding": {
+								"bottom": "0",
+								"left": "var(--wp--preset--spacing--medium)",
+								"right": "0",
+								"top": "0"
+							}
+						},
+						"typography": {
+							"fontFamily": "var(--wp--preset--font-family--body)",
+							"fontStyle": "normal",
+							"lineHeight": "var(--wp--custom--line-height--default)"
+						}
+					}
 				}
 			}
 		},
