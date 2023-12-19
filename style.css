@@ -15,9 +15,9 @@ Tags: block-editor, full-site-editing, site-editor
 
 */
 
-/* ------------------------------
+/* --------------------------------------------------------
     RESETS
------------------------------- */
+-------------------------------------------------------- */
 *,
 *::before,
 *::after {
@@ -56,8 +56,7 @@ blockquote {
 
 ol,
 ul {
-	margin: 0;
-	padding: 0;
+	padding-left: var(--wp--preset--spacing--small)
 }
 
 ol ul,
@@ -67,9 +66,16 @@ ul ol {
     padding-inline-start: 40px;
 }
 
-/* ------------------------------
+/* --------------------------------------------------------
+    Default Spacing for items with backgrounds
+-------------------------------------------------------- */
+.has-background {
+	padding: var(--wp--preset--spacing--large);
+}
+
+/* --------------------------------------------------------
     BLOCK STYLES
------------------------------- */
+-------------------------------------------------------- */
 
 /* ---------------
     LISTS
@@ -77,4 +83,11 @@ ul ol {
 .is-style-no-bullets li {
 	list-style-type: none;
 	margin-left: 0;
+}
+
+/* --------------------------------------------------------
+    ACCESSABILITY
+-------------------------------------------------------- */
+.has-contrast-background-color {
+	color: var(--wp--preset--color--base);
 }
