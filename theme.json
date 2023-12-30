@@ -23,24 +23,44 @@
 					"slug": "contrast"
 				},
 				{
-					"color": "#E65E17",
+					"color": "#006D77",
 					"name": "Primary",
 					"slug": "primary"
 				},
 				{
-					"color": "#F1F1F1",
+					"color": "#83C5BE",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#EDF6F9",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#EEEEEE",
 					"name": "Gray 1",
 					"slug": "gray-1"
 				},
 				{
-					"color": "#E65E17",
+					"color": "#DDDDDD",
 					"name": "Gray 2",
 					"slug": "gray-2"
 				},
 				{
-					"color": "#E65E17",
+					"color": "#CCCCCC",
 					"name": "Gray 3",
 					"slug": "gray-3"
+				},
+				{
+					"color": "#BBBBBB",
+					"name": "Gray 4",
+					"slug": "gray-4"
+				},
+				{
+					"color": "#333333",
+					"name": "Gray 5",
+					"slug": "gray-5"
 				}
 			]
 		},
@@ -95,6 +115,7 @@
 						"max": "1.6rem"
 					},
 					"size": "1.6rem",
+					"name": "Medium",
 					"slug": "medium"
 				},
 				{
