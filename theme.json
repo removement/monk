@@ -300,6 +300,25 @@
 					}
 				}
 			},
+			"core/navigation": {
+				"elements": {
+					"link": {
+						":hover": {
+							"typography": {
+								"textDecoration": "underline"
+							}
+						},
+						"typography": {
+							"textDecoration": "none",
+							"fontSize": "var(--wp--preset--font-size--small)",
+							"fontWeight": "var(--wp--custom--font-weight--bold)"
+						}
+					}
+				},
+				"typography": {
+					"fontWeight": "var(--wp--custom--font-weight--bold)"
+				}
+			},
 			"core/quote": {
 				"border": {
 					"radius": "var(--wp--custom--border-radius--small)",
