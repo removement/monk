@@ -1,10 +1,4 @@
 /* --------------------------------------------------------
-    ACCESSABILITY
--------------------------------------------------------- */
-.has-contrast-background-color {
-  color: var(--wp--preset--color--base); }
-
-/* --------------------------------------------------------
     RESETS
 -------------------------------------------------------- */
 *,
@@ -57,16 +51,21 @@ a:not(.wp-element-button):hover {
 .has-background {
   padding: var(--wp--preset--spacing--large); }
 
+/* --------------------------------------------------------
+    ACCESSABILITY
+-------------------------------------------------------- */
+.has-contrast-background-color {
+  color: var(--wp--preset--color--base); }
+
 /* ----------------------------------
     BUTTONS
 ---------------------------------- */
 .wp-block-button:not(.is-style-outline) .wp-block-button__link {
   background: var(--wp--preset--color--contrast);
   color: var(--wp--preset--color--base); }
-
-.wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
-  background: var(--wp--custom--color--default-button-hover-background);
-  color: var(--wp--preset--color--base); }
+  .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
+    background: var(--wp--custom--color--default-button-hover-background);
+    color: var(--wp--preset--color--base); }
 
 .wp-block-button.is-style-outline .wp-block-button__link:hover {
   background: var(--wp--custom--color--outline-button-hover-background);
