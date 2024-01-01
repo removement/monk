@@ -1,0 +1,17 @@
+/* ----------------------------------
+    LISTS - NO BULLETS
+---------------------------------- */
+.is-style-no-bullets li {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+ul.is-style-no-bullets,
+ol.is-style-no-bullets {
+	padding-left: 0;
+
+	li:not(:first-child),
+	li:not(:first-child) {
+		margin-top: calc(var(--wp--preset--spacing--small) - 0.5rem);
+	}
+}

@@ -1,0 +1,25 @@
+/* ----------------------------------
+    DETAILS
+---------------------------------- */
+.wp-block-details summary {
+	font-weight: var(--wp--custom--font-weight--semi-bold);
+}
+
+/* ----------------------------------
+    DETAILS - GRAY
+---------------------------------- */
+.wp-block-details.is-style-gray {
+	padding: var(--wp--preset--spacing--small);
+	border-radius: var(--wp--custom--border-radius--small);
+	background: var(--wp--preset--color--gray-1);
+}
+
+/* ----------------------------------
+    DETAILS - DARK
+---------------------------------- */
+.wp-block-details.is-style-dark {
+	padding: var(--wp--preset--spacing--small);
+	border-radius: var(--wp--custom--border-radius--small);
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+}

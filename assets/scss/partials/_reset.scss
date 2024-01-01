@@ -1,0 +1,55 @@
+/* --------------------------------------------------------
+    RESETS
+-------------------------------------------------------- */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="submit"],
+textarea:focus,
+.wp-element-button {
+	transition: all 0.15s ease-in-out;
+}
+
+a,
+a:focus,
+a:hover,
+a:not(.wp-element-button) {
+	text-decoration-thickness: 1px;
+}
+
+b,
+strong {
+	font-weight: var(--wp--custom--font-weight--bold);
+}
+
+ol,
+ul {
+	padding-inline-start: calc(var(--wp--preset--spacing--small) + 5px);
+}
+
+ol ul,
+ol ol,
+ul ul,
+ul ol {
+    padding-inline-start: var(--wp--preset--spacing--small);
+}
+
+a:not(.wp-element-button) {
+	color: var(--wp--custom--color--link);
+}
+
+a:not(.wp-element-button):focus,
+a:not(.wp-element-button):hover {
+	color: var(--wp--custom--color--link-hover);
+}
