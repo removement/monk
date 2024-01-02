@@ -29,7 +29,7 @@ function setup() {
 	load_theme_textdomain( 'monk', get_template_directory() . '/languages' );
 
 	// Enqueue editor styles.
-	add_editor_style( get_template_directory_uri() . '/style.css' );
+	add_editor_style( get_template_directory_uri() . '/assets/css/style.css' );
 
 	// Disable core block inline styles.
 	add_filter( 'should_load_separate_core_block_assets', '__return_false' );
