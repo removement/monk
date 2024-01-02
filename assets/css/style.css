@@ -118,6 +118,10 @@ ol.is-style-no-bullets {
   ol.is-style-no-bullets li:not(:first-child) {
     margin-top: calc(var(--wp--preset--spacing--small) - 0.5rem); }
 
+.wp-block-quote {
+  margin-inline-start: 0;
+  margin-inline-end: 0; }
+
 /* ----------------------------------
     TABLE OF CONTENTS
 ---------------------------------- */
