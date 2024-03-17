@@ -480,6 +480,24 @@
 						}
 					}
 				}
+			},
+			"core/separator": {
+				"border": {
+					"color": "var(--wp--preset--color--gray-1)",
+					"radius": "0",
+					"style": "solid",
+					"width": "1px 0 0 0"
+				},
+				"variations": {
+					"wide": {
+						"border": {
+							"color": "var(--wp--preset--color--gray-1)",
+							"radius": "0",
+							"style": "solid",
+							"width": "3px 0 0 0"
+						}
+					}
+				}
 			}
 		},
 		"elements": {
