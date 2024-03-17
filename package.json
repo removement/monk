@@ -4,15 +4,13 @@
   "description": "An intentionally simple Site Editor base/starter theme built for WordPress.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass-compile": "sass --no-source-map --style=compressed assets/scss:assets/css",
+    "sass-watch": "sass --watch --update --style=expanded assets/scss:assets/css"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "gulp": "^4.0.2",
-    "node-sass": "^9.0.0"
-  },
   "devDependencies": {
-    "gulp-sass": "^5.1.0"
+    "sass": "^1.72.0"
   }
 }
