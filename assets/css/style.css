@@ -64,7 +64,9 @@ a:not(.wp-element-button):hover {
 /* --------------------------------------------------------
     ACCESSABILITY
 -------------------------------------------------------- */
-.has-contrast-background-color {
+.has-contrast-background-color,
+.has-primary-background-color,
+.has-gray-5-background-color {
   color: var(--wp--preset--color--base);
 }
 
